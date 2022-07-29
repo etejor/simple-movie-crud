@@ -6,16 +6,16 @@ import (
 )
 
 type Movie struct{
-	ID        string 'json:"id"'     
-	Title     string 'json:"title"'     // i keep getting illiga rune literal 
-	Year      int 'json:"year"'
-	Director *Director string 'json:"director"'
+	ID        string `json:"id"`     
+	Title     string `json:"title"`     
+	Year      int `json:"year"`
+	Director *Director string `json:"director"`
 
 }
 
 type Director struct{
-	Firstname string 'json:"firstname"'
-	Lastname string 'json:"lastname"'
+	Firstname string `json:"firstname"`
+	Lastname string `json:"lastname"`
 }
 
 var movies = []Movie{
